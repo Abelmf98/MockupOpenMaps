@@ -1,0 +1,46 @@
+<!doctype html>
+<!--Abel Mansilla Felipe-->
+<html lang="es">
+<head>
+  <meta charset="utf-8">
+  <title>Badajoz Unida</title>
+  <base href="./">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+  <link rel="icon" type="image/x-icon" href="assets/header_logo.png">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.8.1/font/bootstrap-icons.css">
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="formulario.css">
+</head>
+<body>
+    <div class="contenedor-crear">
+        <form>
+            <div class="input-container">
+                <input type="text" formControlName="titulo" placeholder="Título">
+            </div>
+            <div class="input-container">
+                <div class="imagen">
+                  <input type="file">
+                  <button ><strong class="add-button">Añadir portada <i class="bi bi-image-fill"></i></strong></button>
+                </div>
+            </div>
+            <div class="input-container">
+                <textarea formControlName="descripcion" placeholder="Descripción..."></textarea>
+            </div>
+            <div class="input-container">
+                <input type="datetime-local" formControlName="fechaHora" >
+            </div>
+            <div class="input-container">
+                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d49695.21935694638!2d-7.059438475772341!3d38.879358092319954!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0xd16e43eac5f354d%3A0x688c7e359714a4a9!2sBadajoz!5e0!3m2!1ses!2ses!4v1663793902714!5m2!1ses!2ses" width="350" height="250" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+            <div class="input-container">
+                <select formControlName="idSubcategoria">
+                  <option value="" selected="selected">Seleccione Subcategoría</option>
+                </select>
+          <input type="submit" value="Enviar" />
+        </form>
+    </div>
+</body>
+</html>
